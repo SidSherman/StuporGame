@@ -26,6 +26,10 @@ public class Json : MonoBehaviour
         path = Path.Combine(Application.dataPath + transform.gameObject.name, "Save.json");
         data = LoadJson.LoadingJson<Data>();
     }
+    public void SaveData()
+    {
+        
+    }
     void OnApplicationQuit(){
         SaveJson.SaveFileJson(data);
     }
