@@ -8,16 +8,16 @@ public class PlayerMovement : Actor
 {
 
     public float jumpPower = 1.0f, gravityDif;
-    private CharacterController _controller;
-    private float RotHor  = 0.0f, gravityForce;
-    
+    private CharacterController controller;
+    private float gravityForce;
+    private PlayerAnimator playerAnimator;
     
     
     // Start is called before the first frame update
     void Start()
     {
-         _controller = GetComponent<CharacterController>();
-     
+        controller = GetComponent<CharacterController>();
+        playerAnimator = GetComponentInChildren<PlayerAnimator>();
     }
 
     // Update is called once per frame
@@ -34,40 +34,45 @@ public class PlayerMovement : Actor
 
     protected override void Movement()
     {   
-        float InputX = Input.GetAxis("Vertical");
-        float InputZ = Input.GetAxis("Horizontal");
-        Vector3 InputVector = (new Vector3(InputX, 0, InputZ)).normalized;
        
+        float InputZ = Input.GetAxis("Horizontal");
+      
+       // 1 - setBool(run,true) 2 - setbool(run,false)
+       /*if(InputZ != 0)
+       {
+           playerAnimator.SetAnimation(1);
+       }
+       else playerAnimator.SetAnimation(2);*/
+        //Debug.Log(InputZ);
+      
+            controller.Move(transform.right * InputZ * speed * 0.1f);
+            controller.Move(transform.up * gravityForce * 0.1f);
         
-        _controller.Move(transform.forward * InputX * speed * 0.1f);
-        _controller.Move(transform.right * InputZ * speed * 0.1f);
-        _controller.Move(transform.up * gravityForce * 0.1f);
-
-
     }
 
+    protected override void Attack()
+    {   
+        if(Input.GetKey(KeyCode.Mouse0))
+        {
+
+        }
+    }
 
     private void Jump(){
 
-         if (!_controller.isGrounded)
+         if (!controller.isGrounded)
         gravityForce -= gravityDif * Time.deltaTime;
             else
         gravityForce = -1f;
-            if (Input.GetButton("Jump") && _controller.isGrounded)
-        gravityForce = jumpPower;
+        if (Input.GetButton("Jump") && controller.isGrounded){
+
+            //playerAnimator.SetAnimation(3);
+            gravityForce = jumpPower;
+        }
    
     }
-    protected override void Rotation()
-    {   
-   
-        RotHor += Input.GetAxis("Mouse X");
-        
-        Quaternion rot = Quaternion.AngleAxis(-RotHor, Vector3.down);
-        transform.rotation = rot;
-      
 
 
-    }
 
 
 }
