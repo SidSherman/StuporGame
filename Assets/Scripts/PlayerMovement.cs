@@ -13,6 +13,7 @@ public class PlayerMovement : Actor
     private PlayerAnimator playerAnimator;
     
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,10 @@ public class PlayerMovement : Actor
 
     protected override void Movement()
     {   
-       
+        float realSpeed = speed;
+        if(Input.GetKey(KeyCode.LeftShift))
+            realSpeed = speed* 1.5f;
+
         float InputZ = Input.GetAxis("Horizontal");
       
        // 1 - setBool(run,true) 2 - setbool(run,false)
@@ -44,8 +48,8 @@ public class PlayerMovement : Actor
        }
        else playerAnimator.SetAnimation(2);*/
         //Debug.Log(InputZ);
-      
-            controller.Move(transform.right * InputZ * speed * 0.1f);
+
+            controller.Move(transform.right * InputZ * realSpeed * 0.1f);
             controller.Move(transform.up * gravityForce * 0.1f);
         
     }
@@ -65,7 +69,7 @@ public class PlayerMovement : Actor
             else
         gravityForce = -1f;
         if (Input.GetButton("Jump") && controller.isGrounded){
-
+            
             //playerAnimator.SetAnimation(3);
             gravityForce = jumpPower;
         }
