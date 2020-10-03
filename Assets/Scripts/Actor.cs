@@ -6,6 +6,7 @@ public class Actor : MonoBehaviour
 {
 
     public float speed;
+    protected Animator animator;
 
     // Start is called before the first frame update
     void Start()
