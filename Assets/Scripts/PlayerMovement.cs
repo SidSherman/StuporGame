@@ -118,7 +118,7 @@ public class PlayerMovement : Actor
         IEnumerator JumpTimer(){
              
         yield return new WaitForSeconds(0.5f);
-        canDoubleJump = true;
+        //canDoubleJump = true;
     }
 
 }
