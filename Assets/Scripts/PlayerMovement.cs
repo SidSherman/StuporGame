@@ -8,7 +8,7 @@ public class PlayerMovement : Actor
 {
 
     public float jumpPower = 1.0f, gravityDif;
-    private CharacterController controller;
+    public CharacterController controller;
     private float gravityForce;
     private bool canDoubleJump = false, moveRight = true;
   
@@ -21,7 +21,7 @@ public class PlayerMovement : Actor
     void Start()
     {
         canDoubleJump = false;
-        controller = GetComponent<CharacterController>();
+        //controller = GetComponent<CharacterController>();
    
         animator = GetComponentInChildren <Animator> ();
         
@@ -44,6 +44,7 @@ public class PlayerMovement : Actor
 
     protected override void Movement()
     {   
+        transform.position = modelTransform.position;
         float realSpeed = speed;
         if(Input.GetKey(KeyCode.LeftShift))
         {
