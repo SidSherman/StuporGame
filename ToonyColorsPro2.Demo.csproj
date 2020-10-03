@@ -296,49 +296,49 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Antlr3.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Antlr3.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.Core.Editor">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.Core.Editor.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.Core.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.Core.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.Flow.Editor">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.Flow.Editor.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.Flow.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.Flow.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.Flow.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.Flow.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.State.Editor">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.State.Editor.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.State.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Bolt.State.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Bolt.State.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Bolt.State.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ionic.Zip.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ionic.Zip.dll</HintPath>
  </Reference>
  <Reference Include="Ludiq.Core.Editor">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ludiq.Core.Editor.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ludiq.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Ludiq.Core.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ludiq.Core.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ludiq.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Ludiq.Graphs.Editor">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ludiq.Graphs.Editor.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ludiq.Graphs.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Ludiq.Graphs.Runtime">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ludiq.Graphs.Runtime.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ludiq.Graphs.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Ludiq.Platforms">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/Ludiq.Platforms.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/Ludiq.Platforms.dll</HintPath>
  </Reference>
  <Reference Include="MiscUtil">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/MiscUtil.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/MiscUtil.dll</HintPath>
  </Reference>
  <Reference Include="YamlDotNet">
- <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Ludiq/Assemblies/YamlDotNet.dll</HintPath>
+ <HintPath>D:/Projects/Gamedev/Unity/Jam_Ludum_47/Assets/Animations/Warrior Pack Bundle 2 FREE/Ludiq/Assemblies/YamlDotNet.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

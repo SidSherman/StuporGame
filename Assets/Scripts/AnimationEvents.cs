@@ -25,4 +25,13 @@ public class AnimationEvents : MonoBehaviour
         
     }
 
+    void Hit(){
+       
+        
+    }
+
+    void Land(){
+       
+        
+    }
 }
