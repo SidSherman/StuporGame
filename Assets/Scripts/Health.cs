@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     public int MaxHealthCount = 3;
     private int HealthCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,25 +21,29 @@ public class Health : MonoBehaviour
 
     public void GetDamage(){
         HealthCount--;
+        Debug.Log("GetDamage " + gameObject.name + HealthCount);
         if (HealthCount == 0)
         {   
-             Debug.Log("GetDamage");
+             
             if(gameObject.tag == "Player")
                 {
-                    GetComponent<PlayerMovement> ().enabled = false;
-                    GetComponent<CharacterController> ().enabled = false;
+                    GetComponent<PlayerMovement> ().Death();
+                    
                 
                 }
-            else
-                GetComponent<Collider> ().enabled = false;
+            if(gameObject.tag == "Enemy")
+            {
+                GetComponent<Enemy> ().Death();
+            }
+               
         }
     }
 
-    public void Heal(){
+    /*public void Heal(){
         if( HealthCount < MaxHealthCount)
             HealthCount++;
 
 
-    }
+    }*/
 
 }
