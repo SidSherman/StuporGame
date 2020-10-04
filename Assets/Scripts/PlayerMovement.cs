@@ -43,7 +43,7 @@ public class PlayerMovement : Actor
         
         modelTransform.position = transform.position;
         realspeed = speed;
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetButton("Run"))
         {
             
             realspeed = speed* 1.5f;
@@ -130,13 +130,14 @@ public class PlayerMovement : Actor
     
     }
 
-        private void OnCollisionEnter(Collision other) {
-            if(other.gameObject.tag == "Enemy")
+        private void OnControllerColliderHit(ControllerColliderHit hit) {
+            if(hit.gameObject.tag == "Enemy")
             {
-                GetComponent<Health>().GetDamage();
+                GetComponent<Health> ().GetDamage();
+                controller.Move(transform.forward * -1 * 5);
             }
         }
-
+   
         IEnumerator JumpTimer(){
 
         yield return new WaitForSeconds(0.5f);
