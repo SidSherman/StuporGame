@@ -32,6 +32,10 @@ public class Actor : MonoBehaviour
      {
          
      }
+     public virtual void Death()
+     {
+
+     }
 
     
 
