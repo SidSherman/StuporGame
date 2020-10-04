@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4569535395872650117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3000026, y: 2.9, z: -20.800007}
+  m_LocalPosition: {x: 5.3000026, y: 5.76, z: -20.800007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5649495267050916768}
@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 5649495265645715857}
   - component: {fileID: 5649495265645715856}
   - component: {fileID: 6903562516223903021}
+  - component: {fileID: 56265146416862535}
+  - component: {fileID: 3071522538101445426}
   m_Layer: 0
   m_Name: FemaleMage_B
   m_TagString: Untagged
@@ -167,6 +169,36 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2.58, z: 0}
+--- !u!114 &56265146416862535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649495265645715858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5753db4ae8a1c6b48a24161293dc40e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpPower: 5
+  gravityDif: 10
+  controller: {fileID: 6903562516223903021}
+  modelTransform: {fileID: 5649495267050916768}
+--- !u!114 &3071522538101445426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649495265645715858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331119c3ba0a7f442b689e70c1c883da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealthCount: 3
 --- !u!1 &5649495265836950486
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +806,7 @@ GameObject:
   - component: {fileID: 5649495267050916768}
   - component: {fileID: 5649495267050916769}
   - component: {fileID: 4708931152244442158}
+  - component: {fileID: -1036780196402905541}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -822,7 +855,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5649495267050916771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5753db4ae8a1c6b48a24161293dc40e0, type: 3}
   m_Name: 
@@ -832,6 +865,19 @@ MonoBehaviour:
   gravityDif: 10
   controller: {fileID: 6903562516223903021}
   modelTransform: {fileID: 5649495267283578138}
+--- !u!114 &-1036780196402905541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649495267050916771}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331119c3ba0a7f442b689e70c1c883da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealthCount: 3
 --- !u!1 &5649495267100847853
 GameObject:
   m_ObjectHideFlags: 0
