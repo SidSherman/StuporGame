@@ -24,7 +24,11 @@ public class Health : MonoBehaviour
         {   
              Debug.Log("GetDamage");
             if(gameObject.tag == "Player")
-                GetComponent<CharacterController> ().enabled = false;
+                {
+                    GetComponent<PlayerMovement> ().enabled = false;
+                    GetComponent<CharacterController> ().enabled = false;
+                
+                }
             else
                 GetComponent<Collider> ().enabled = false;
         }
