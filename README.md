@@ -1,2 +1,2 @@
 # Ludum47Project
-Blank Unity project for Ludum Dare 74...
+Game for Ludum Dare 74
